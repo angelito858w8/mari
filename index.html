@@ -18,8 +18,8 @@
 
         /* Header */
         header {
-            background-color: #f8bbd0;
-            color: white;
+            background-color: #c04671;
+            color: rgb(165, 151, 151);
             padding: 2rem;
             text-align: center;
             font-size: 2.5rem;
@@ -30,7 +30,7 @@
 
         /* Navegación */
         nav {
-            background-color: #e75888;
+            background-color: #bd3982;
             padding: 1rem;
             position: sticky;
             top: 0;
@@ -190,39 +190,6 @@
             }
         }
 
-        /* Reproductor de música */
-        #music-player {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 100;
-        }
-
-        #music-toggle {
-            background-color: #f8bbd0;
-            color: white;
-            border: none;
-            padding: 10px;
-            font-size: 1.5rem;
-            cursor: pointer;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease;
-        }
-
-        #music-toggle:hover {
-            background-color: #f48fb1;
-        }
-
-        #music-toggle.playing {
-            animation: pulse 2s infinite;
-        }
-
         @keyframes pulse {
             0% {
                 transform: scale(1);
@@ -240,7 +207,7 @@
     <div class="animated-bg" id="animated-bg"></div>
 
     <header>
-        Para Mi Amor, Hoy y Siempre
+        Para Mi Amorcito ❤️
     </header>
 
     <nav>
@@ -253,7 +220,7 @@
     <main>
         <section id="hero">
             <h1>hi my love</h1>
-            <p>hoy no te pude regalar flores pero te regalo un rinconcito donde te doy parte de mi ❤️</p>
+            <p>ayer no te pude regalar flores pero hoy te regalo un rinconcito donde te doy parte de mi ❤️</p>
         </section>
 
         <section id="poemas">
@@ -262,31 +229,24 @@
                 <div class="poema-title" id="poema-title"></div>
                 <div class="poema" id="poema-content"></div>
                 <div class="poema-buttons">
-                    <button id="prev-poema">Poema Anterior</button>
-                    <button id="next-poema">Siguiente Poema</button>
+                    <button id="prev-poema">pensamiento Anterior</button>
+                    <button id="next-poema">Siguiente Pensamiento</button>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Siempre tuyo, con amor eterno.</p>
-        <p>Si en algún momento quieres ver otro poema para ti,<br>recuerda que esta web siempre será tuya, baby. 💕</p>
-        <p> <span id="current-year"></span> Nuestro Rincón de Amor</p>
+        <p>para mi amorcito  </p>
+        <p>Si en algún momento quieres ver otro poema para ti,<br>recuerda que esta web siempre será tuya, baby. 💕,<br> a cada rato hay nuevos poemas para mi musa hermosa</p>
+        <p> <span id="current-year">❤️</span> Nuestro Rincón de Amor</p>
     </footer>
 
-    <div id="music-player">
-        <audio id="background-music" loop>
-            <source src="https://example.com/piano-background.mp3" type="audio/mpeg">
-            Tu navegador no soporta el elemento de audio.
-        </audio>
-        <button id="music-toggle">▶️</button>
-    </div>
 
     <script>
         // Poemas
         const poemas = [
-            {
+        {
                 title: "no soy",
                 content: `
 No soy Mike Morales,
@@ -314,6 +274,36 @@ de construir contigo un mundo nuevo,
 donde cada hilo sea un lazo eterno,
 y tú, mi amor, seas siempre mi historia,
 mi centro, mi telaraña del cielo.
+`
+            }, {
+                title: "Amor tipo botón de elevador",
+                content: `
+
+Nuestro amor es como un botón de elevador,
+pequeño, discreto, pero lleno de valor;
+un simple toque y me llevas al cielo,
+o bajas conmigo al sótano de mis miedos.
+
+Eres la luz que se enciende al presionarte,
+una promesa de que todo puede cambiarse;
+y aunque a veces siento que tardas en llegar,
+sé que siempre estás dispuesto a avanzar.
+
+Somos dos pisos en constante movimiento,
+subiendo y bajando, pero siempre en el intento;
+porque lo importante no es el destino final,
+sino el viaje compartido en este metal.
+
+Hay días en que parece que te atoras,
+que el peso del mundo frena tus horas,
+pero aquí estoy, pulsando tu fuerza,
+recordándote que juntos rompemos puertas.
+
+Y si la vida nos deja entre pisos,
+seremos dos locos soñando con atisbos;
+porque aunque el tiempo intente detenernos,
+nuestro amor siempre encontrará el momento.
+
 `
             },
             {
@@ -409,7 +399,7 @@ el amor que en mi alma siento.`
         }
 
         const animatedBg = document.getElementById('animated-bg');
-        for (let i = 0; i < 50; i++) {
+        for (let i = 0; i < 20; i++) {
             animatedBg.appendChild(createBgItem());
         }
 
